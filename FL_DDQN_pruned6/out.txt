@@ -1,0 +1,32 @@
+Model: "sequential_9"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ prune_low_magnitude_dense_1  (None, 500)              9502      
+ 8 (PruneLowMagnitude)                                           
+                                                                 
+ prune_low_magnitude_dense_1  (None, 35)               35037     
+ 9 (PruneLowMagnitude)                                           
+                                                                 
+=================================================================
+Total params: 44,539
+Trainable params: 22,535
+Non-trainable params: 22,004
+_________________________________________________________________
+Saved pruned Keras model to: 0.6pruned_keras_file.h5
+2022-05-14 14:46:12.684928: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+2022-05-14 14:46:13.409012: W tensorflow/compiler/mlir/lite/python/tf_tfl_flatbuffer_helpers.cc:363] Ignored output_format.
+2022-05-14 14:46:13.409244: W tensorflow/compiler/mlir/lite/python/tf_tfl_flatbuffer_helpers.cc:366] Ignored drop_control_dependency.
+2022-05-14 14:46:13.410756: I tensorflow/cc/saved_model/reader.cc:43] Reading SavedModel from: C:\Users\xflab\AppData\Local\Temp\tmp7p0y0avm
+2022-05-14 14:46:13.412626: I tensorflow/cc/saved_model/reader.cc:107] Reading meta graph with tags { serve }
+2022-05-14 14:46:13.412848: I tensorflow/cc/saved_model/reader.cc:148] Reading SavedModel debug info (if present) from: C:\Users\xflab\AppData\Local\Temp\tmp7p0y0avm
+2022-05-14 14:46:13.419816: I tensorflow/cc/saved_model/loader.cc:210] Restoring SavedModel bundle.
+2022-05-14 14:46:13.446546: I tensorflow/cc/saved_model/loader.cc:194] Running initialization op on SavedModel bundle at path: C:\Users\xflab\AppData\Local\Temp\tmp7p0y0avm
+2022-05-14 14:46:13.459293: I tensorflow/cc/saved_model/loader.cc:283] SavedModel load for tags { serve }; Status: success: OK. Took 48533 microseconds.
+2022-05-14 14:46:13.476946: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:237] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+WARNING:absl:Buffer deduplication procedure will be skipped when flatbuffer library is not properly loaded
+Saved quantized and pruned TFLite model to: 0.6pruned_keras_file.tflite
+Size of gzipped pruned TFlite model: 11832.00 bytes
+prue_num 0.6
+
+Process finished with exit code 0
